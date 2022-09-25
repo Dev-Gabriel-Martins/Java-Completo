@@ -1,8 +1,8 @@
-package application;
+package Triangle.application;
 
 import java.util.Locale;
 import java.util.Scanner;
-import entities.Triangle;
+import Triangle.entities.Triangle;
 
 public class Main {
 
