@@ -2,7 +2,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Program {
+public class NoPOO {
 
 	public static void main(String[] args) {
 		
@@ -38,7 +38,6 @@ public class Program {
 		   System.out.println("Larger area: Y");
 		}
 		
-		
-	}
-
+        }	
+	
 }
