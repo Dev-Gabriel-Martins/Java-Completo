@@ -26,7 +26,7 @@ public class Main {
         System.out.print(student);
         student.verificationGrade();
         
-        
+       sc.close();
     }               
             
 }

@@ -27,7 +27,7 @@ public class Student {
         }else{
             System.out.println("Failed");
             double fg = 60 - finalGrade();
-            System.out.println("Missing" + String.format("%.2f",fg) +" points");
+            System.out.println("Missing " + String.format("%.2f",fg) +" points");
         }
     }
 }
