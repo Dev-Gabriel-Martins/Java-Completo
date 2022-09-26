@@ -8,7 +8,7 @@ public class Employee {
  
     public void increaseSalary(double percentage){
         grossSalary = grossSalary + ((grossSalary * percentage) /100);
-        System.out.println("LOG Gross Salary"+ grossSalary);
+        
     }
     
     public double netSalary(){
