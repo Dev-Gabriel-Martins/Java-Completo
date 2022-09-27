@@ -15,20 +15,24 @@ public class Main {
         
         System.out.println("Enter product data: ");
         System.out.println("Nome: ");
-        product.name = sc.nextLine();
+        String name = sc.nextLine();
+        product.setName(name);
         
         System.out.println("Price: ");
-        product.price = sc.nextDouble();
+        double price = sc.nextDouble();
+        product.setPrice(price);
         
         System.out.println("Quantity in stock");
-        product.quantity = sc.nextInt();
+        int quantity = sc.nextInt();
+        product.addProducts(quantity);
+        
         
         System.out.println();
         System.out.println("Product data: "+product);
         
         System.out.println();
         System.out.print("Enter the number of products to be added in stock: ");
-        int quantity = sc.nextInt();
+        quantity = sc.nextInt();
         product.addProducts(quantity);
         
         System.out.println();
