@@ -11,6 +11,10 @@ public class Product {
     public Product(){
     
     }
+
+    public Product(String name, double price) {
+        
+    }
     
     public String getName(){
         return name;
