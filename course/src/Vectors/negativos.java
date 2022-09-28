@@ -1,3 +1,5 @@
+package Vectors;
+
 import java.util.Scanner;
 public class negativos {
   public static void main (String[] args){

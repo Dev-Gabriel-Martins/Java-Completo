@@ -1,3 +1,5 @@
+package Vectors;
+
 /*
 Problema "abaixo_da_media"
 Fazer um programa para ler um número inteiro N e depois um vetor de N números reais. Em seguida,
