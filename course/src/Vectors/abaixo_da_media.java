@@ -30,9 +30,10 @@ public class abaixo_da_media {
         ind[i] = sc.nextDouble();
 
         cont += ind[i]; 
-        media = cont/ind.length;
 
     }
+    
+    media = cont/ind.length;
    
    System.out.println("Somas dos vetor :"+cont);
    System.out.println("Média :"+media); 
