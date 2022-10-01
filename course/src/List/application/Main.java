@@ -1,4 +1,3 @@
-
 package List.application;
 
 import java.util.ArrayList;
@@ -43,11 +42,13 @@ public class Main {
         System.out.println("-------------------");
         System.out.println("Index of Bob: "+list.indexOf("Bob"));
         System.out.println("Index of Bob: "+list.indexOf("Marco"));
-        /* .indexOf
+        /* .indexOf retorna o valor do indice de cada valor
+            No caso "marcos" e voltado o valor -1 visto que não marco na lista mais
+        
         Terminal:
         -------------------
-        Alex
-        Bob
+        Index of Bob: 1
+        Index of Bob: -1
         
         */
         
@@ -68,9 +69,10 @@ public class Main {
         String name = list.stream().filter(x -> x.charAt(0) == 'j').findFirst().orElse(null);
         System.out.println(name);
                 
-       /* 
+       /* E possivel passar valores por uma lista pelo medo .stream
         *Terminal:
-        *
+        -------------------
+        * null
         */
         
         
