@@ -3,6 +3,8 @@ package Employee.entities;
 
 public class Employee {
 
+    public Employee(){}
+
     public Employee(Integer id, String name1, Double salary) {
     }
     public String name;

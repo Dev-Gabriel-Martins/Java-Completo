@@ -11,7 +11,7 @@ public class Main {
         Locale.setDefault(Locale.US);        
         Scanner sc = new Scanner(System.in);
         
-        Employee employee = new Employee(id, name, salary); 
+        Employee employee = new Employee(); 
         
         System.out.print("Noma: ");
         employee.name = sc.nextLine();
