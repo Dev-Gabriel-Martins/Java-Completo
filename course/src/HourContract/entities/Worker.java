@@ -3,6 +3,7 @@ package HourContract.entities;
 import java.util.List;
 import HourContract.entities.enums.WorkerLevel;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 /**
  * @author gabri
@@ -69,4 +70,24 @@ public class Worker {
    public void removeContract(HourContract contract){
         contracts.remove(contract);
     }
+    public double income(int year, int month){
+    double sum = baseSalary;
+       Calendar cal = Calendar.getInstance();
+                        
+        for (HourContract c : contracts){
+            cal.setTime(c.getDate());
+            
+        
+        int c_year = cal.get(Calendar.YEAR);
+        int c_month = 1+ cal.get(Calendar.MONTH);
+        
+        if (year == c_year && month == c_month){
+            sum += c.totalValue();
+            
+        }
+    }
+    return sum;
+    }
+   
+   
 }
