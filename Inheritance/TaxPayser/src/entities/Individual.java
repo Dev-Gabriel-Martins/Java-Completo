@@ -10,4 +10,19 @@ package entities;
  */
 public class Individual extends TaxPayer {
     
+    private double HealthEpenditures;
+    
+    public Individual(){}
+    
+    public Individual(String name, Double anualIncome, Double HealthEpenditures){
+    super(name, anualIncome);
+    this.HealthEpenditures = HealthEpenditures; 
+    }
+        
+    @Override
+    public Double tax(){       
+        return (anualIncome * 0.25 )-(HealthEpenditures * 0.5);
+    }
+
+    
 }
