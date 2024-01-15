@@ -5,12 +5,21 @@ package entities;
  */
 public class Company extends TaxPayer {
     
-    private Integer NumberEnployees;
+    private Integer numberEnployees;
+    
+    public Company(){}
+    
+    public Company(String name, Double anualIncome, Integer numberEnployees){        
+    super(name, anualIncome);
+    this.numberEnployees = numberEnployees;
+    }
     
     @Override
     public Double tax() {
-    
-     return 0.0;
+        if (numberEnployees > 10 ){
+        return anualIncome * 0.14;
+        }
+     return anualIncome * 0.16;
     }
     
 }

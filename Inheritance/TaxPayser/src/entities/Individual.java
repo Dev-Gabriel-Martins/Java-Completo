@@ -15,7 +15,7 @@ public class Individual extends TaxPayer {
     public Individual(){}
     
     public Individual(String name, Double anualIncome, Double HealthEpenditures){
-    super(name, anualIncome);
+    super();
     this.HealthEpenditures = HealthEpenditures; 
     }
         
