@@ -15,14 +15,30 @@ public class Individual extends TaxPayer {
     public Individual(){}
     
     public Individual(String name, Double anualIncome, Double HealthEpenditures){
-    super();
+    super(name, anualIncome);
     this.HealthEpenditures = HealthEpenditures; 
     }
-        
-    @Override
-    public Double tax(){       
-        return (anualIncome * 0.25 )-(HealthEpenditures * 0.5);
+
+    public double getHealthEpenditures() {
+        return HealthEpenditures;
     }
 
+    public void setHealthEpenditures(double HealthEpenditures) {
+        this.HealthEpenditures = HealthEpenditures;
+    }       
     
+    @Override
+    public Double tax(){       
+        double basicTax;
+        if(getAnualIncome() < 20000.0){
+            basicTax = getAnualIncome() * 0.15;
+        }else{
+           basicTax = getAnualIncome() * 0.25;                
+        }
+        basicTax = basicTax - (getHealthEpenditures() * 0.5);
+        if(basicTax < 0.0){
+        basicTax = 0.0;
+        }
+      return basicTax;  
+    }    
 }

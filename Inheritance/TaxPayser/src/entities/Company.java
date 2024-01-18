@@ -13,6 +13,14 @@ public class Company extends TaxPayer {
     super(name, anualIncome);
     this.numberEnployees = numberEnployees;
     }
+
+    public Integer getNumberEnployees() {
+        return numberEnployees;
+    }
+
+    public void setNumberEnployees(Integer numberEnployees) {
+        this.numberEnployees = numberEnployees;
+    }
     
     @Override
     public Double tax() {
