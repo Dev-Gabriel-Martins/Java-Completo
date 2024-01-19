@@ -10,21 +10,21 @@ package entities;
  */
 public class Individual extends TaxPayer {
     
-    private double HealthEpenditures;
+    private Double healthEpenditures;
     
     public Individual(){}
     
-    public Individual(String name, Double anualIncome, Double HealthEpenditures){
+    public Individual(String name, Double anualIncome, Double healthEpenditures){
     super(name, anualIncome);
-    this.HealthEpenditures = HealthEpenditures; 
+    this.healthEpenditures = healthEpenditures; 
     }
 
     public double getHealthEpenditures() {
-        return HealthEpenditures;
+        return healthEpenditures;
     }
 
-    public void setHealthEpenditures(double HealthEpenditures) {
-        this.HealthEpenditures = HealthEpenditures;
+    public void setHealthEpenditures(Double HealthEpenditures) {
+        this.healthEpenditures = healthEpenditures;
     }       
     
     @Override
