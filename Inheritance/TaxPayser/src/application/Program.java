@@ -34,6 +34,7 @@ public class Program {
             } else {
                 System.out.print("Number of employees: ");
                 Integer numberOfEmployees = sc.nextInt();
+               
                 list.add(new Company(name, anualIncome, numberOfEmployees));
             }
         }

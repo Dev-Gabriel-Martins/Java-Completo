@@ -18,8 +18,10 @@ public class Individual extends TaxPayer {
     super(name, anualIncome);
     this.healthEpenditures = healthEpenditures; 
     }
+    
+    
 
-    public double getHealthEpenditures() {
+    public Double getHealthEpenditures() {
         return healthEpenditures;
     }
 
