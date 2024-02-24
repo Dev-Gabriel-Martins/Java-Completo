@@ -17,6 +17,7 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         
+        try{
         System.out.println("Room number:  ");
         int number = sc.nextInt();
         System.out.println("Check-in data (dd/MM/yyyy): ");
@@ -24,10 +25,7 @@ public class Program {
         System.out.print("Check-out data (dd/MM/yyyy): ");
         Date checkOut = sdf.parse(sc.next());
         
-        if (!checkOut.after(checkIn)){
-            System.out.println("Error in reservation: Check-out date must be after check-in date");            
-        }
-        else{
+       
         Reservation reservation = new Reservation(number, checkIn, checkOut);
             System.out.println("Reservation: " + reservation);        
             
@@ -40,6 +38,12 @@ public class Program {
             
             reservation.updateDate(checkIn, checkOut);
             System.out.println("Reservation: " + reservation);
+        }
+        catch(ParseException e){
+            System.out.println("Invalid date format");
+        }
+        catch(IllegalArgumentException e){
+            System.out.println("Error in reservation: " + e.getMessage());
         }
         
     }
