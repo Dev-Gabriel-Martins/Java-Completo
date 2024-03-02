@@ -4,12 +4,8 @@
  */
 package exceptions;
 
-/**
- *
- * @author gabri
- */
-public class BusinessException {
-    private static final long serialVersionUID = 1L;
+public class BusinessException extends RuntimeException {
+	private static final long serialVersionUID = 1L;
 
 	public BusinessException(String msg) {
 		super(msg);
