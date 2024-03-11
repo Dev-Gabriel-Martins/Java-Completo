@@ -23,10 +23,14 @@ public class Program {
         try(BufferedReader br = new BufferedReader(new FileReader(path))){            
             String line = br.readLine();
             String[] values = line.split(",");
-        for (String value : values) {
+            
+            System.out.println(values[1]);
+            
+            
+            
+            /*for (String value : values) {
             System.out.println(value);
-        } //TODO Passar o value para dentro dos objeto  Product
-            // provalemente com List
+        } */
         }catch(IOException e){
             System.out.println("Error "+ e.getMessage());
         }
