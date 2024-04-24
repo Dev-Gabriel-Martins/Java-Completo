@@ -4,17 +4,17 @@ import java.time.LocalDateTime;
 
 public class CarRental {
     private LocalDateTime start;
-    private LocalDateTime fisish;
+    private LocalDateTime finish;
     private Vehicle vehicle;
     private Invoice invoice;
 
-    public CarRental(){}
+    public CarRental() {
+    }
 
-    public CarRental(LocalDateTime start, LocalDateTime fisish, Vehicle vehicle, Invoice invoice) {
+    public CarRental(LocalDateTime start, LocalDateTime finish, Vehicle vehicle) {
         this.start = start;
-        this.fisish = fisish;
+        this.finish = finish;
         this.vehicle = vehicle;
-        this.invoice = invoice;
     }
 
     public LocalDateTime getStart() {
@@ -25,12 +25,12 @@ public class CarRental {
         this.start = start;
     }
 
-    public LocalDateTime getFisish() {
-        return fisish;
+    public LocalDateTime getFinish() {
+        return finish;
     }
 
-    public void setFisish(LocalDateTime fisish) {
-        this.fisish = fisish;
+    public void setFinish(LocalDateTime finish) {
+        this.finish = finish;
     }
 
     public Vehicle getVehicle() {
