@@ -5,7 +5,7 @@ import model.entities.Contract;
 public class ContractService {
 
     public void processContract(Contract contract, Integer months){
-        //TODO
+        //Todo aqui é core da aplicação
     }
 
 
